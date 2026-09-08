@@ -680,7 +680,7 @@ def classify_and_filter(alive_nodes):
 
     print(f"[*] 智能去重与家宽防刷完成，出库总节点: {len(unique_all)} 个，纯净独立家宽: {len(seen_res_ips)} 个")
     return unique_all
-
+node_name = f"{flag} {c_name} {idx:02d}{tag} - 🆉🆈🅵🆇"
 def export_clash_yaml(clash_proxies, filepath):
     names = [p["name"] for p in clash_proxies]
     config = {
